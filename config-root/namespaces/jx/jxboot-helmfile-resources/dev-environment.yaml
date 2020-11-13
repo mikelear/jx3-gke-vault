@@ -81,7 +81,7 @@ spec:
         externalDNS: false
         namespaceSubDomain: -jx.
         tls:
-          email: ""
+          email: mike.lear@leartech.com
           enabled: true
           production: true
       kaniko: true
