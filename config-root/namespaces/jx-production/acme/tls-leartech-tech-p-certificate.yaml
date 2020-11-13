@@ -11,6 +11,7 @@ spec:
   secretName: "tls-leartech-tech-p"
   issuerRef:
     name: letsencrypt-prod
+    kind: ClusterIssuer
   commonName: "*.leartech.tech"
   dnsNames:
     - "*.leartech.tech"
