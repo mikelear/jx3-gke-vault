@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        mikelear/gohttp: true
         mikelear/jx3-gke-vault: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        mikelear/gohttp: merge
         mikelear/jx3-gke-vault: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - mikelear/jx3-gke-vault
+        - mikelear/gohttp
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - mikelear/jx3-gke-vault
+        - mikelear/gohttp
       target_url: http://dashboard-jx.leartech.tech
 kind: ConfigMap
 metadata:
