@@ -96,5 +96,15 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
+- chart: bitnami/external-dns
+- chart: jetstack/cert-manager
+- chart: jx3/acme
+  name: acme-jx
+- chart: jx3/acme
+  name: tls-jx-staging
+  namespace: jx-staging
+- chart: jx3/acme
+  name: tls-jx-production
+  namespace: jx-production
 templates: {}
 missingFileHandler: ""
