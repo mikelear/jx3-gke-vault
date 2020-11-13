@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mikelear
+    provider: github
+    repository: gohttp
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mikelear-gohttp
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mikelear/gohttp.git
+  org: mikelear
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: gohttp
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mikelear/gohttp

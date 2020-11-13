@@ -6,6 +6,10 @@ data:
       repos:
       - mikelear/jx3-gke-vault
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - mikelear/gohttp
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -20,6 +24,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      mikelear/gohttp:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       mikelear/jx3-gke-vault:
       - config-updater
       - approve
@@ -49,6 +69,11 @@ data:
     - repos:
       - mikelear/jx3-gke-vault
       trusted_org: todo
+    - repos:
+      - mikelear/gohttp
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
