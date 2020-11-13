@@ -131,11 +131,11 @@ releases:
   - issuer:
       cluster: true
 - chart: dev/gohttp
-  version: 0.0.1
+  version: 0.0.2
   name: gohttp
   namespace: jx-staging
 - chart: dev/gohttp
-  version: 0.0.1
+  version: 0.0.2
   name: gohttp
   namespace: jx-production
 templates: {}
