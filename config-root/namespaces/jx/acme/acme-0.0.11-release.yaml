@@ -1,0 +1,36 @@
+# Source: acme/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-11T18:22:39Z"
+  deletionTimestamp: null
+  name: 'acme-0.0.11'
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        fix: releasing to GCS
+      sha: b68cfe1cb78e8837ddc79f74a31ea3b903c898e2
+  gitCloneUrl: https://github.com/jenkins-x/acme.git
+  gitHttpUrl: https://github.com/jenkins-x/acme
+  gitOwner: jenkins-x
+  gitRepository: acme
+  name: 'acme'
+  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.11
+  version: v0.0.11
+status: {}

@@ -1,0 +1,36 @@
+# Source: acme/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-12T17:27:03Z"
+  deletionTimestamp: null
+  name: 'acme-0.0.12'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      branch: master
+      committer:
+        accountReference:
+          - id: james-rawlings-0
+            provider: jenkins.io/git-github-userid
+        email: rawlingsj80@gmail.com
+        name: James Rawlings
+      message: |
+        chore: add missing dns name
+      sha: 014816e1db0489426eec348d6317550110a52a42
+  gitCloneUrl: https://github.com/jenkins-x/acme.git
+  gitHttpUrl: https://github.com/jenkins-x/acme
+  gitOwner: jenkins-x
+  gitRepository: acme
+  name: 'acme'
+  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.12
+  version: v0.0.12
+status: {}
