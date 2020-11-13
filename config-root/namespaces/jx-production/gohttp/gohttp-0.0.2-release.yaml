@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-13T16:53:59Z"
+  creationTimestamp: "2020-11-13T17:20:37Z"
   deletionTimestamp: null
-  name: 'gohttp-0.0.1'
+  name: 'gohttp-0.0.2'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -14,19 +14,19 @@ spec:
       branch: master
       committer: {}
       message: |
-        release 0.0.1
-      sha: 2ee35383f439ecb73c26525f076c2fd3a37e381b
+        release 0.0.2
+      sha: 1c1a7d0f82ec6c7ada96fa68506268b53f6ff450
     - author: {}
       branch: master
       committer: {}
       message: |
-        chore: Jenkins X build pack
-      sha: 85abca73d5976c3f07556ae5e462d7b1f9a365f8
+        add a dummy file
+      sha: 0254bb0c61fcad976382d2ad672d01dc2504c3fd
   gitCloneUrl: https://github.com/mikelear/gohttp.git
   gitHttpUrl: https://github.com/mikelear/gohttp
   gitOwner: mikelear
   gitRepository: gohttp
   name: 'gohttp'
-  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.1
-  version: v0.0.1
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.2
+  version: v0.0.2
 status: {}
