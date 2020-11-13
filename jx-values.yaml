@@ -8,15 +8,21 @@ jxRequirements:
       gitRef: master
       gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
   cluster:
-    devEnvApprovers:
-    - todo
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: lear-tech-k8-cluster
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    gke:
+      projectNumber: "671176663592"
     namespace: jx
+    project: domleartechtech
     provider: gke
     registry: gcr.io
+    vaultName: lear-tech-k8-cluster
+    vaultSAName: lear-tech-k8-cluster-vt
+    zone: europe-west2-a
   environments:
   - ingress:
       domain: ""
@@ -27,6 +33,8 @@ jxRequirements:
         enabled: false
         production: false
     key: dev
+    owner: mikelear
+    repository: jx3-gke-vault
   - ingress:
       domain: ""
       externalDNS: false
@@ -47,14 +55,16 @@ jxRequirements:
     key: production
   gitops: true
   ingress:
-    domain: ""
+    domain: leartech.tech
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""
-      enabled: false
-      production: false
+      enabled: true
+      production: true
   kaniko: true
+  pipelineUser:
+    username: mikelear
   repository: nexus
   secretStorage: vault
   storage:
@@ -62,15 +72,20 @@ jxRequirements:
       enabled: false
       url: ""
     logs:
-      enabled: false
-      url: ""
+      enabled: true
+      url: gs://logs-lear-tech-k8-cluster-fcd59f7759a4
     reports:
-      enabled: false
-      url: ""
+      enabled: true
+      url: gs://reports-lear-tech-k8-cluster-fcd59f7759a4
     repository:
-      enabled: false
-      url: ""
-  vault: {}
+      enabled: true
+      url: gs://repository-lear-tech-k8-cluster-fcd59f7759a4
+  vault:
+    bucket: vault-lear-tech-k8-cluster-fcd59f7759a4
+    key: crypto-key-lear-tech-k8-cluster-fcd59f7759a4
+    keyring: keyring-lear-tech-k8-cluster-fcd59f7759a4
+    name: lear-tech-k8-cluster
+    serviceAccount: lear-tech-k8-cluster-vt
   velero:
     schedule: ""
     ttl: ""
@@ -81,6 +96,6 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
-  enabled: false
+  enabled: true
 jxRequirementsVault:
   enabled: true
