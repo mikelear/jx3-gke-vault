@@ -21,6 +21,8 @@ repositories:
   url: https://kubernetes-charts.banzaicloud.com
 - name: jetstack
   url: https://charts.jetstack.io
+- name: dev
+  url: https://chartmuseum-jx.leartech.tech
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.16
@@ -128,5 +130,9 @@ releases:
   values:
   - issuer:
       cluster: true
+- chart: dev/gohttp
+  version: 0.0.1
+  name: gohttp
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
