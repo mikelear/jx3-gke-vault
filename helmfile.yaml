@@ -103,8 +103,14 @@ releases:
 - chart: jx3/acme
   name: tls-jx-staging
   namespace: jx-staging
+  values:
+  - issuer:
+      cluster: true
 - chart: jx3/acme
   name: tls-jx-production
   namespace: jx-production
+  values:
+  - issuer:
+      cluster: true
 templates: {}
 missingFileHandler: ""
