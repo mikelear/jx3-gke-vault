@@ -131,7 +131,7 @@ releases:
   - issuer:
       cluster: true
 - chart: dev/gohttp
-  version: 0.0.4
+  version: 0.0.5
   name: gohttp
   namespace: jx-staging
 - chart: dev/gohttp
