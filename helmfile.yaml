@@ -139,6 +139,6 @@ releases:
   name: gohttp
   namespace: jx-production
   values:
-   mainDomain : "Y"
+   - mainDomain : "Y"
 templates: {}
 missingFileHandler: ""
