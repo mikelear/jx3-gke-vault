@@ -135,8 +135,10 @@ releases:
   name: gohttp
   namespace: jx-staging
 - chart: dev/gohttp
-  version: 0.0.3
+  version: 0.0.4
   name: gohttp
   namespace: jx-production
+  values:
+   mainDomain : "Y"
 templates: {}
 missingFileHandler: ""
