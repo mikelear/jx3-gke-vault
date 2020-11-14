@@ -1,0 +1,32 @@
+# Source: gohttp/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-14T17:26:21Z"
+  deletionTimestamp: null
+  name: 'gohttp-0.0.5'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        release 0.0.5
+      sha: 2f1383eb3bb4be8fd8257418a02232d4d430c366
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        Redit main to trigger a build
+      sha: 5d0be64497e669467842f252904109daa207233c
+  gitCloneUrl: https://github.com/mikelear/gohttp.git
+  gitHttpUrl: https://github.com/mikelear/gohttp
+  gitOwner: mikelear
+  gitRepository: gohttp
+  name: 'gohttp'
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.5
+  version: v0.0.5
+status: {}
