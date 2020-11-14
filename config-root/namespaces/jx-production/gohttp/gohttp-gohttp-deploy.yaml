@@ -5,7 +5,7 @@ metadata:
   name: gohttp-gohttp
   labels:
     draft: draft-app
-    chart: "gohttp-0.0.2"
+    chart: "gohttp-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-production
   annotations:
@@ -21,13 +21,14 @@ spec:
         draft: draft-app
         app: gohttp-gohttp
     spec:
+      serviceAccountName: gohttp-gohttp
       containers:
         - name: gohttp
-          image: "gcr.io/domleartechtech/gohttp:0.0.2"
+          image: "gcr.io/domleartechtech/gohttp:0.0.3"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.2
+              value: 0.0.3
           envFrom: null
           ports:
             - containerPort: 8080
