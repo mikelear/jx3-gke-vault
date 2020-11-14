@@ -16,21 +16,7 @@ spec:
               serviceName: gohttp
               servicePort: 80
       host: gohttp-jx-staging.leartech.tech
-    - host: www.leartech.tech
-      http:
-        paths:
-          - backend:
-              serviceName: gohttp
-              servicePort: 80
-    - host: leartech.tech
-      http:
-        paths:
-          - backend:
-              serviceName: gohttp
-              servicePort: 80
   tls:
     - hosts:
-        - www.leartech.tech
-        - leartech.tech
         - gohttp-jx-staging.leartech.tech
       secretName: "tls-leartech-tech-p"
