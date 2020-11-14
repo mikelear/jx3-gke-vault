@@ -1,0 +1,44 @@
+# Source: gohttp/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-14T17:52:26Z"
+  deletionTimestamp: null
+  name: 'gohttp-0.0.7'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        release 0.0.7
+      sha: 2ae5cf1cca65a44f44fbf0bbf5ddd7bcedfb2005
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try to fix preview chart
+      sha: a4eae8124f38c34ffa7a898f7bd1fdad965302af
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try to fix preview chart
+      sha: ff2ec341586dc39fecc970964488dc403fc2f3f5
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        change the preview helmfile to add a jx3/acme chart with the ClusterIssuer option true
+      sha: 1d4a97bc60b76e93f39e3700b89598b76700b20f
+  gitCloneUrl: https://github.com/mikelear/gohttp.git
+  gitHttpUrl: https://github.com/mikelear/gohttp
+  gitOwner: mikelear
+  gitRepository: gohttp
+  name: 'gohttp'
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.7
+  version: v0.0.7
+status: {}
