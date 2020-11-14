@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-13T17:20:37Z"
+  creationTimestamp: "2020-11-14T13:44:42Z"
   deletionTimestamp: null
-  name: 'gohttp-0.0.2'
+  name: 'gohttp-0.0.3'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -14,19 +14,25 @@ spec:
       branch: master
       committer: {}
       message: |
-        release 0.0.2
-      sha: 1c1a7d0f82ec6c7ada96fa68506268b53f6ff450
+        release 0.0.3
+      sha: eefba4f8388368b2e456dbee19a54b360cf41678
     - author: {}
       branch: master
       committer: {}
       message: |
-        add a dummy file
-      sha: 0254bb0c61fcad976382d2ad672d01dc2504c3fd
+        Change the main.go to trigger a build
+      sha: 3d1cee506e8077e2fb18dcda4da7992f66c07c61
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        Change the Ingress to test changes to include the Leartech Domain
+      sha: f4cc6e38ba0665542f3d8c6a6a3ebb22b7f26287
   gitCloneUrl: https://github.com/mikelear/gohttp.git
   gitHttpUrl: https://github.com/mikelear/gohttp
   gitOwner: mikelear
   gitRepository: gohttp
   name: 'gohttp'
-  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.2
-  version: v0.0.2
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.3
+  version: v0.0.3
 status: {}
