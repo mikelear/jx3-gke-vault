@@ -2,35 +2,35 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-12T17:27:03Z"
+  creationTimestamp: "2020-11-15T13:04:03Z"
   deletionTimestamp: null
-  name: 'acme-0.0.12'
-  namespace: jx-production
+  name: 'acme-0.0.13'
+  namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   commits:
     - author:
         accountReference:
-          - id: james-rawlings-0
+          - id: chris-mellard-0
             provider: jenkins.io/git-github-userid
-        email: rawlingsj80@gmail.com
-        name: James Rawlings
+        email: chrism@datacom.co.nz
+        name: Chris Mellard
       branch: master
       committer:
         accountReference:
-          - id: james-rawlings-0
+          - id: chris-mellard-0
             provider: jenkins.io/git-github-userid
-        email: rawlingsj80@gmail.com
-        name: James Rawlings
+        email: chrism@datacom.co.nz
+        name: Chris Mellard
       message: |
-        chore: add missing dns name
-      sha: 014816e1db0489426eec348d6317550110a52a42
+        fix: set azure issuer config back to 0.13 compliant values
+      sha: e827b5a1fd3d9ff68d12a702268e8d2f733760a5
   gitCloneUrl: https://github.com/jenkins-x/acme.git
   gitHttpUrl: https://github.com/jenkins-x/acme
   gitOwner: jenkins-x
   gitRepository: acme
   name: 'acme'
-  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.12
-  version: v0.0.12
+  releaseNotesURL: https://github.com/jenkins-x/acme/releases/tag/v0.0.13
+  version: v0.0.13
 status: {}
