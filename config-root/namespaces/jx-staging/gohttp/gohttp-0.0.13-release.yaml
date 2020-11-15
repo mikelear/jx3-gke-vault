@@ -1,0 +1,50 @@
+# Source: gohttp/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-15T15:42:10Z"
+  deletionTimestamp: null
+  name: 'gohttp-0.0.13'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        release 0.0.13
+      sha: 4adf8fb4e3a62fb2bddd13ff300528c4c3870632
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        Trigger a PR build
+      sha: b5dd79426dff698b8e3642f921d89f1f325f6833
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        Trigger a PR build
+      sha: ddade20e599dbb2f87341572d5f233ada8c9d79d
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        trigger build to try and manually change the Ingress
+      sha: c22d0449329127954da040a87f96a854ed5ae743
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        Trigger Prev build
+      sha: 8c523d124ae0003aa52a6fb184aafdc5926e5bb6
+  gitCloneUrl: https://github.com/mikelear/gohttp.git
+  gitHttpUrl: https://github.com/mikelear/gohttp
+  gitOwner: mikelear
+  gitRepository: gohttp
+  name: 'gohttp'
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.13
+  version: v0.0.13
+status: {}
