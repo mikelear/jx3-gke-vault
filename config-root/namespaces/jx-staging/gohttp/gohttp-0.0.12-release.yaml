@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-15T12:08:44Z"
+  creationTimestamp: "2020-11-15T12:22:48Z"
   deletionTimestamp: null
-  name: 'gohttp-0.0.11'
+  name: 'gohttp-0.0.12'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -14,19 +14,19 @@ spec:
       branch: master
       committer: {}
       message: |
-        release 0.0.11
-      sha: fa1b94030f4f61b164eb28e3c3081a69f06c74f5
+        release 0.0.12
+      sha: 75c4f998200082ec71bcb0abb508cfaa9d400b34
     - author: {}
       branch: master
       committer: {}
       message: |
-        change to try and see if the helmfile changes has worked
-      sha: 9f935317af5415f94808d871b2b30e49baf6342a
+        put the helmfile changes back
+      sha: e66396cb7ffad3e732946d9d026a96539f4ed289
   gitCloneUrl: https://github.com/mikelear/gohttp.git
   gitHttpUrl: https://github.com/mikelear/gohttp
   gitOwner: mikelear
   gitRepository: gohttp
   name: 'gohttp'
-  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.11
-  version: v0.0.11
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.12
+  version: v0.0.12
 status: {}
