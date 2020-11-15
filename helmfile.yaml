@@ -117,6 +117,8 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
+  - issuer:
+      cluster: true
 - chart: jx3/acme
   name: tls-jx-staging
   namespace: jx-staging
