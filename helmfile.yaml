@@ -113,11 +113,22 @@ releases:
   values:
   - versionStream/charts/jetstack/cert-manager/values.yaml.gotmpl
 - chart: jx3/acme
-  version: 0.0.11
   name: acme-jx
   namespace: jx
   values:
   - versionStream/charts/jx3/acme-jx/values.yaml.gotmpl
+  - issuer:
+      cluster: true
+- chart: jx3/acme
+  name: stagingjx
+  namespace: jx-staging
+  values:
+  - issuer:
+      cluster: true
+- chart: jx3/acme
+  name: productionjx
+  namespace: jx-production
+  values:
   - issuer:
       cluster: true
 - chart: dev/gohttp
