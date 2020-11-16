@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-15T15:42:10Z"
+  creationTimestamp: "2020-11-16T09:55:11Z"
   deletionTimestamp: null
-  name: 'gohttp-0.0.13'
+  name: 'gohttp-0.0.14'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -14,37 +14,31 @@ spec:
       branch: master
       committer: {}
       message: |
-        release 0.0.13
-      sha: 4adf8fb4e3a62fb2bddd13ff300528c4c3870632
+        release 0.0.14
+      sha: 08564b32f6c9b5d7094b9646016b47fb00248ac1
     - author: {}
       branch: master
       committer: {}
       message: |
-        Trigger a PR build
-      sha: b5dd79426dff698b8e3642f921d89f1f325f6833
+        Trigger a Build
+      sha: a6782dc0c2c72ccf1ca391894f3cf1c6c15fc1f8
     - author: {}
       branch: master
       committer: {}
       message: |
-        Trigger a PR build
-      sha: ddade20e599dbb2f87341572d5f233ada8c9d79d
+        Trigger a Build
+      sha: 8ec33d1934cfb3535afafc90cf40227df0544ba9
     - author: {}
       branch: master
       committer: {}
       message: |
-        trigger build to try and manually change the Ingress
-      sha: c22d0449329127954da040a87f96a854ed5ae743
-    - author: {}
-      branch: master
-      committer: {}
-      message: |
-        Trigger Prev build
-      sha: 8c523d124ae0003aa52a6fb184aafdc5926e5bb6
+        Trigger push
+      sha: 23a2c27922f869860ca92581fabb9e16ec3d451e
   gitCloneUrl: https://github.com/mikelear/gohttp.git
   gitHttpUrl: https://github.com/mikelear/gohttp
   gitOwner: mikelear
   gitRepository: gohttp
   name: 'gohttp'
-  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.13
-  version: v0.0.13
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.14
+  version: v0.0.14
 status: {}
