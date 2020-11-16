@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: gohttp
   labels:
-    chart: "gohttp-0.0.15"
+    chart: "gohttp-0.0.16"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"

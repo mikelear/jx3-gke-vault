@@ -1,0 +1,122 @@
+# Source: gohttp/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-16T16:35:20Z"
+  deletionTimestamp: null
+  name: 'gohttp-0.0.16'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        release 0.0.16
+      sha: 46f4650fd95169d16b8bff8d38e9dac319f2289f
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        changed the label on the JX secret
+      sha: e60651ce9a0f7b8e81fdf6fe5b38abcbeea7711d
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        changed the label on the JX secret
+      sha: 8dc7016cc52b02d0b8f6ce3422d56ddc6fec87d3
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try adding a hook to see if it is called
+      sha: d947a63126de937a04e8ab53c6fc7a962287dd77
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try adding a hook to see if it is called
+      sha: 65538ce09492eb50975dde441de650e1e7a1f3e0
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try the helfile again but moved the chart to the bottom
+      sha: 931e397459bee6fae4fb97658c265e2dbad51397
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try the helfile again but moved the chart to the bottom
+      sha: ac8a12c33c38115142763a7506c17363deb4d009
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try the helfile again but moved the chart to the bottom
+      sha: 1ad478233d626c3e1d30f868ff10230b075efd67
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try the helfile again but moved the chart to the bottom
+      sha: 63360a445901c89fefa80effd18e68ba1c4a5bf3
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try the helfile again but moved the chart to the bottom
+      sha: 93110069fd156b4d5aa615c54f7ca4405afbcf1b
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        remover cert.yaml
+      sha: 0fa135e812bd93e9f5eb3ff45b6a01509743e85e
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        Add the cert from namespace jx
+      sha: bfc4727aa28ba385cd03ad1982322f659535006e
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try and use default certs instead
+      sha: a847005bc67d0638211ebe70b1e27bedfa50a261
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        change the location of values
+      sha: 8a3f992f057ea696cde3a07c856e94872b125964
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        add the tls secret dir
+      sha: 5d4fc46080c106f84621c56dbcda90e427adf3cc
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try to run a bespoke chart to create a secret
+      sha: 6963a9d30155b0d34e816a7fee8a8f8c3f4b4b58
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        try to run a bespoke chart to create a secret
+      sha: 380b57b258533ff52504b94d1512e91995c6cfcb
+  gitCloneUrl: https://github.com/mikelear/gohttp.git
+  gitHttpUrl: https://github.com/mikelear/gohttp
+  gitOwner: mikelear
+  gitRepository: gohttp
+  name: 'gohttp'
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.16
+  version: v0.0.16
+status: {}
