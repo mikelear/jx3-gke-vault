@@ -1,0 +1,8 @@
+# Source: angular-jx3-example/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: angular-jx3-example-angular-jx3-example
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
