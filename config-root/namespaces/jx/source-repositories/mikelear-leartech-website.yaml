@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mikelear
+    provider: github
+    repository: leartech-website
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mikelear-leartech-website
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mikelear/leartech-website.git
+  org: mikelear
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: leartech-website
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mikelear/leartech-website
