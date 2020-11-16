@@ -9,6 +9,7 @@ data:
       enabled:
         mikelear/gohttp: true
         mikelear/jx3-gke-vault: true
+        mikelear/leartech-website: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         mikelear/gohttp: merge
         mikelear/jx3-gke-vault: merge
+        mikelear/leartech-website: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - mikelear/jx3-gke-vault
         - mikelear/gohttp
+        - mikelear/leartech-website
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - mikelear/jx3-gke-vault
         - mikelear/gohttp
+        - mikelear/leartech-website
       target_url: http://dashboard-jx.leartech.tech
 kind: ConfigMap
 metadata:
