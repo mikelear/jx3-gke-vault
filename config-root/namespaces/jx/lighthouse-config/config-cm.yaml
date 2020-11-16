@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        mikelear/angular-jx3-example: true
         mikelear/gohttp: true
         mikelear/jx3-gke-vault: true
         mikelear/leartech-website: true
@@ -21,6 +22,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        mikelear/angular-jx3-example: merge
         mikelear/gohttp: merge
         mikelear/jx3-gke-vault: merge
         mikelear/leartech-website: merge
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - mikelear/jx3-gke-vault
+        - mikelear/angular-jx3-example
         - mikelear/gohttp
         - mikelear/leartech-website
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - mikelear/jx3-gke-vault
+        - mikelear/angular-jx3-example
         - mikelear/gohttp
         - mikelear/leartech-website
       target_url: http://dashboard-jx.leartech.tech

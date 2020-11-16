@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - mikelear/angular-jx3-example
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - mikelear/gohttp
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -28,6 +32,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      mikelear/angular-jx3-example:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       mikelear/gohttp:
       - approve
       - assign
@@ -88,6 +108,9 @@ data:
     triggers:
     - repos:
       - mikelear/jx3-gke-vault
+      trusted_org: todo
+    - repos:
+      - mikelear/angular-jx3-example
       trusted_org: todo
     - repos:
       - mikelear/gohttp
