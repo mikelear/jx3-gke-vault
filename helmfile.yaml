@@ -130,5 +130,9 @@ releases:
   namespace: jx-production
   values:
   - mainDomain: "Y"
+- chart: dev/angular-jx3-example
+  version: 0.0.1
+  name: angular-jx3-example
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
