@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: angular-jx3-example
     - name: gohttp
     - name: leartech-website
     scheduler: in-repo

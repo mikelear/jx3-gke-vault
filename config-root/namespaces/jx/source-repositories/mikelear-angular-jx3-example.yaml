@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mikelear
+    provider: github
+    repository: angular-jx3-example
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mikelear-angular-jx3-example
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mikelear/angular-jx3-example.git
+  org: mikelear
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: angular-jx3-example
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mikelear/angular-jx3-example
