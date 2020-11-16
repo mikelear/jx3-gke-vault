@@ -1,0 +1,32 @@
+# Source: gohttp/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-11-16T17:22:03Z"
+  deletionTimestamp: null
+  name: 'gohttp-0.0.17'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        release 0.0.17
+      sha: b928ae206f7218e08580a0388eff7ece52d55683
+    - author: {}
+      branch: master
+      committer: {}
+      message: |
+        trigger a build to check preview
+      sha: 6797932abc77cc46f44af730916a8c71b4659dba
+  gitCloneUrl: https://github.com/mikelear/gohttp.git
+  gitHttpUrl: https://github.com/mikelear/gohttp
+  gitOwner: mikelear
+  gitRepository: gohttp
+  name: 'gohttp'
+  releaseNotesURL: https://github.com/mikelear/gohttp/releases/tag/v0.0.17
+  version: v0.0.17
+status: {}
