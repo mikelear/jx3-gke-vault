@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: leartech-website
   labels:
-    chart: "leartech-website-0.0.3"
+    chart: "leartech-website-0.0.4"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
