@@ -142,5 +142,9 @@ releases:
   namespace: jx-production
   values:
   - mainDomain: "Y"
+- chart: dev/leartech-website
+  version: 0.0.3
+  name: leartech-website
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
