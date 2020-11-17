@@ -141,7 +141,7 @@ releases:
   name: gohttp
   namespace: jx-production
 - chart: dev/leartech-website
-  version: 0.0.3
+  version: 0.0.4
   name: leartech-website
   namespace: jx-staging
 - chart: dev/leartech-website
