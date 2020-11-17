@@ -1,0 +1,22 @@
+# Source: leartech-website/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: leartech-website
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: leartech-website
+              servicePort: 80
+      host: leartech-website-jx-staging.leartech.tech
+  tls:
+    - hosts:
+        - leartech-website-jx-staging.leartech.tech
+      secretName: "tls-leartech-tech-p"
