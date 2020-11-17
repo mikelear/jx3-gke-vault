@@ -1,10 +1,10 @@
-# Source: gohttp/templates/ingress.yaml
+# Source: leartech-website/templates/ingress.yaml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
-  name: gohttp
+  name: leartech-website
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -13,10 +13,10 @@ spec:
     - http:
         paths:
           - backend:
-              serviceName: gohttp
+              serviceName: leartech-website
               servicePort: 80
-      host: gohttp-jx-production.leartech.tech
+      host: leartech-website-jx-production.leartech.tech
   tls:
     - hosts:
-        - gohttp-jx-production.leartech.tech
+        - leartech-website-jx-production.leartech.tech
       secretName: "tls-leartech-tech-p"
