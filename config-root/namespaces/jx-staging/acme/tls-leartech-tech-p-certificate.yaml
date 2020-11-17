@@ -1,0 +1,18 @@
+# Source: acme/templates/cert-manager-prod-certificate.yaml
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: "tls-leartech-tech-p"
+  labels:
+    jenkins.io/letsencrypt-service: production
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-staging
+spec:
+  secretName: "tls-leartech-tech-p"
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: "*.leartech.tech"
+  dnsNames:
+    - "*.leartech.tech"
+    - "leartech.tech"
