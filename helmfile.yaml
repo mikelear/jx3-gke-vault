@@ -134,5 +134,9 @@ releases:
   version: 0.0.1
   name: angular-jx3-example
   namespace: jx-staging
+- chart: dev/leartech-website
+  version: 0.0.2
+  name: leartech-website
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
