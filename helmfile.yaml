@@ -140,11 +140,15 @@ releases:
   version: 0.0.4
   name: gohttp
   namespace: jx-production
-  values:
-  - mainDomain: "Y"
 - chart: dev/leartech-website
   version: 0.0.3
   name: leartech-website
   namespace: jx-staging
+- chart: dev/leartech-website
+  version: 0.0.3
+  name: leartech-website
+  namespace: jx-production
+  values:
+  - mainDomain: "Y"
 templates: {}
 missingFileHandler: ""
