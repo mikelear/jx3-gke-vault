@@ -136,5 +136,9 @@ releases:
   - issuer:
       cluster: true
   - versionStream/charts/jx3/acme/values.yaml.gotmpl
+- chart: dev/gohttp
+  version: 0.0.18
+  name: gohttp
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
