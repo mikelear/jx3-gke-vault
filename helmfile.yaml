@@ -59,7 +59,7 @@ releases:
   values:
   - versionStream/charts/stable/nginx-ingress/values.yaml.gotmpl
 - chart: cdf/tekton-pipeline
-  version: 0.17.3
+  version: 0.18.0-1
   name: tekton-pipeline
   namespace: tekton-pipelines
   values:
@@ -113,7 +113,7 @@ releases:
   values:
   - versionStream/charts/jetstack/cert-manager/values.yaml.gotmpl
 - chart: jx3/acme
-  version: 0.0.11
+  version: 0.0.13
   name: acme-jx
   namespace: jx
   values:
@@ -121,17 +121,21 @@ releases:
   - issuer:
       cluster: true
 - chart: jx3/acme
+  version: 0.0.13
   name: stagingjx
   namespace: jx-staging
   values:
   - issuer:
       cluster: true
+  - versionStream/charts/jx3/acme/values.yaml.gotmpl
 - chart: jx3/acme
+  version: 0.0.13
   name: productionjx
   namespace: jx-production
   values:
   - issuer:
       cluster: true
+  - versionStream/charts/jx3/acme/values.yaml.gotmpl
 - chart: dev/gohttp
   version: 0.0.17
   name: gohttp
