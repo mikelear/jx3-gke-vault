@@ -99,6 +99,7 @@ releases:
   values:
   - versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
 - chart: bitnami/external-dns
+  version: 3.2.0
   name: external-dns
   namespace: jx
   values:
@@ -110,6 +111,7 @@ releases:
   values:
   - versionStream/charts/jetstack/cert-manager/values.yaml.gotmpl
 - chart: jx3/acme
+  version: 0.0.13
   name: acme-jx
   namespace: jx
   values:
