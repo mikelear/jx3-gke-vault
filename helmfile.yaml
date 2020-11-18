@@ -121,6 +121,7 @@ releases:
   - issuer:
       cluster: true
 - chart: jx3/acme
+  version: 0.0.13
   name: stagingjx
   namespace: jx-staging
   values:
@@ -128,6 +129,7 @@ releases:
       cluster: true
   - versionStream/charts/jx3/acme/values.yaml.gotmpl
 - chart: jx3/acme
+  version: 0.0.13
   name: productionjx
   namespace: jx-production
   values:
