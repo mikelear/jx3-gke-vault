@@ -15,3 +15,4 @@ spec:
   commonName: "*.leartech.tech"
   dnsNames:
     - "*.leartech.tech"
+    - "leartech.tech"
