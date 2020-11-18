@@ -95,17 +95,17 @@ spec:
           url: ""
         logs:
           enabled: true
-          url: gs://logs-lear-tech-k8-cluster-9b00ba636925
+          url: gs://logs-lear-tech-k8-cluster-c4c6d236184a
         reports:
           enabled: true
-          url: gs://reports-lear-tech-k8-cluster-9b00ba636925
+          url: gs://reports-lear-tech-k8-cluster-c4c6d236184a
         repository:
           enabled: true
-          url: gs://repository-lear-tech-k8-cluster-9b00ba636925
+          url: gs://repository-lear-tech-k8-cluster-c4c6d236184a
       vault:
-        bucket: vault-lear-tech-k8-cluster-9b00ba636925
-        key: crypto-key-lear-tech-k8-cluster-9b00ba636925
-        keyring: keyring-lear-tech-k8-cluster-9b00ba636925
+        bucket: vault-lear-tech-k8-cluster-c4c6d236184a
+        key: crypto-key-lear-tech-k8-cluster-c4c6d236184a
+        keyring: keyring-lear-tech-k8-cluster-c4c6d236184a
         name: lear-tech-k8-cluster
         serviceAccount: lear-tech-k8-cluster-vt
       velero:
@@ -133,9 +133,9 @@ spec:
     prowConfig: Scheduler
     prowEngine: Tekton
     storageLocations:
-      - bucketUrl: gs://logs-lear-tech-k8-cluster-9b00ba636925
+      - bucketUrl: gs://logs-lear-tech-k8-cluster-c4c6d236184a
         classifier: logs
-      - bucketUrl: gs://reports-lear-tech-k8-cluster-9b00ba636925
+      - bucketUrl: gs://reports-lear-tech-k8-cluster-c4c6d236184a
         classifier: reports
     useGitOps: true
     versionStreamRef: master

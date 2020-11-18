@@ -105,11 +105,13 @@ releases:
   values:
   - versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
 - chart: jetstack/cert-manager
+  version: v0.13.1
   name: cert-manager
   namespace: cert-manager
   values:
   - versionStream/charts/jetstack/cert-manager/values.yaml.gotmpl
 - chart: jx3/acme
+  version: 0.0.13
   name: acme-jx
   namespace: jx
   values:
