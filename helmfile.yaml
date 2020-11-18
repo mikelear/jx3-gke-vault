@@ -105,7 +105,7 @@ releases:
   values:
   - versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
 - chart: jetstack/cert-manager
-  version: 1.13
+  version: 1.0.3
   name: cert-manager
   namespace: cert-manager
   values:
