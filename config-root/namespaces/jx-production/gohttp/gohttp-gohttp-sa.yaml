@@ -1,8 +1,0 @@
-# Source: gohttp/templates/sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: gohttp-gohttp
-  namespace: jx-production
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
