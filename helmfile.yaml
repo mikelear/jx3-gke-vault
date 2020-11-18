@@ -127,7 +127,6 @@ releases:
   values:
   - issuer:
       cluster: true
-  - versionStream/charts/jx3/acme/values.yaml.gotmpl
 - chart: jx3/acme
   version: 0.0.13
   name: productionjx
@@ -135,7 +134,6 @@ releases:
   values:
   - issuer:
       cluster: true
-  - versionStream/charts/jx3/acme/values.yaml.gotmpl
 - chart: dev/gohttp
   version: 0.0.18
   name: gohttp
