@@ -140,5 +140,9 @@ releases:
   version: 0.0.18
   name: gohttp
   namespace: jx-staging
+- chart: dev/leartech-website
+  version: 0.0.15
+  name: leartech-website
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
