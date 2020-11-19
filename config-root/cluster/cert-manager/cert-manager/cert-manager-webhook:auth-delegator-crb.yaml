@@ -1,21 +1,21 @@
 # Source: cert-manager/templates/webhook-rbac.yaml
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+# apiserver gets the auth-delegator role to delegate auth decisions to
+# the core apiserver
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
 metadata:
-  name: cert-manager-webhook:dynamic-serving
-  namespace: "cert-manager"
+  name: cert-manager-webhook:auth-delegator
   labels:
     app: webhook
     app.kubernetes.io/name: webhook
     app.kubernetes.io/instance: cert-manager
     app.kubernetes.io/managed-by: Helm
-    app.kubernetes.io/component: "webhook"
-    helm.sh/chart: cert-manager-v1.0.4
-    gitops.jenkins-x.io/pipeline: 'namespaces'
+    helm.sh/chart: cert-manager-v0.13.1
+    gitops.jenkins-x.io/pipeline: 'cluster'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
-  kind: Role
-  name: cert-manager-webhook:dynamic-serving
+  kind: ClusterRole
+  name: system:auth-delegator
 subjects:
   - apiGroup: ""
     kind: ServiceAccount
