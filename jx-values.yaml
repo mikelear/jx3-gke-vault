@@ -73,17 +73,17 @@ jxRequirements:
       url: ""
     logs:
       enabled: true
-      url: gs://logs-lear-tech-k8-cluster-c4c6d236184a
+      url: gs://logs-lear-tech-k8-cluster-54fb310bdb14
     reports:
       enabled: true
-      url: gs://reports-lear-tech-k8-cluster-c4c6d236184a
+      url: gs://reports-lear-tech-k8-cluster-54fb310bdb14
     repository:
       enabled: true
-      url: gs://repository-lear-tech-k8-cluster-c4c6d236184a
+      url: gs://repository-lear-tech-k8-cluster-54fb310bdb14
   vault:
-    bucket: vault-lear-tech-k8-cluster-c4c6d236184a
-    key: crypto-key-lear-tech-k8-cluster-c4c6d236184a
-    keyring: keyring-lear-tech-k8-cluster-c4c6d236184a
+    bucket: vault-lear-tech-k8-cluster-54fb310bdb14
+    key: crypto-key-lear-tech-k8-cluster-54fb310bdb14
+    keyring: keyring-lear-tech-k8-cluster-54fb310bdb14
     name: lear-tech-k8-cluster
     serviceAccount: lear-tech-k8-cluster-vt
   velero:
