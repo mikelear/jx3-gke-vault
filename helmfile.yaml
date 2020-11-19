@@ -21,8 +21,6 @@ repositories:
   url: https://kubernetes-charts.banzaicloud.com
 - name: jetstack
   url: https://charts.jetstack.io
-- name: dev
-  url: https://chartmuseum-jx.leartech.tech
 releases:
 - chart: jenkins-x/jxboot-helmfile-resources
   version: 1.0.16
@@ -136,23 +134,5 @@ releases:
   - issuer:
       cluster: true
   - versionStream/charts/jx3/acme/values.yaml.gotmpl
-- chart: dev/gohttp
-  version: 0.0.18
-  name: gohttp
-  namespace: jx-staging
-- chart: dev/gohttp
-  version: 0.0.18
-  name: gohttp
-  namespace: jx-production
-- chart: dev/leartech-website
-  version: 0.0.15
-  name: leartech-website
-  namespace: jx-staging
-- chart: dev/leartech-website
-  version: 0.0.15
-  name: leartech-website
-  namespace: jx-production
-  values:
-  - mainDomain: "Y"
 templates: {}
 missingFileHandler: ""
