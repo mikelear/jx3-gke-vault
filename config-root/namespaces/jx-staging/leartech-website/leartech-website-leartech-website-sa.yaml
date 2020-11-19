@@ -1,8 +1,0 @@
-# Source: leartech-website/templates/sa.yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: leartech-website-leartech-website
-  namespace: jx-staging
-  labels:
-    gitops.jenkins-x.io/pipeline: 'namespaces'
