@@ -15,8 +15,8 @@ spec:
     solvers:
       - selector:
           dnsNames:
-            - "*.leartech.info"
-            - "leartech.info"
+            - "*.leartech.tech"
+            - "leartech.tech"
         # ACME DNS-01 provider configurations
         dns01:
           clouddns:
