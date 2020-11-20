@@ -16,8 +16,8 @@ spec:
               serviceName: nexus
               servicePort: 80
             path: "/"
-      host: nexus-jx.leartech.tech
+      host: nexus-jx.leartech.info
   tls:
     - hosts:
-        - nexus-jx.leartech.tech
-      secretName: "tls-leartech-tech-p"
+        - nexus-jx.leartech.info
+      secretName: "tls-leartech.info-p"

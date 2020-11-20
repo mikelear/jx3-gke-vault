@@ -53,7 +53,7 @@ data:
         - mikelear/angular-jx3-example
         - mikelear/gohttp
         - mikelear/leartech-website
-      target_url: http://dashboard-jx.leartech.tech
+      target_url: http://dashboard-jx.leartech.info
 kind: ConfigMap
 metadata:
   creationTimestamp: null

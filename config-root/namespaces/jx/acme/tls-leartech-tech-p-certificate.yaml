@@ -2,17 +2,17 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-  name: "tls-leartech-tech-p"
+  name: "tls-leartech.info-p"
   labels:
     jenkins.io/letsencrypt-service: production
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx
 spec:
-  secretName: "tls-leartech-tech-p"
+  secretName: "tls-leartech.info-p"
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: "*.leartech.tech"
+  commonName: "*.leartech.info"
   dnsNames:
-    - "*.leartech.tech"
-    - "leartech.tech"
+    - "*.leartech.info"
+    - "leartech.info"

@@ -16,8 +16,8 @@ spec:
               serviceName: jenkins-x-chartmuseum
               servicePort: 8080
             path: "/"
-      host: chartmuseum-jx.leartech.tech
+      host: chartmuseum-jx.leartech.info
   tls:
     - hosts:
-        - chartmuseum-jx.leartech.tech
-      secretName: "tls-leartech-tech-p"
+        - chartmuseum-jx.leartech.info
+      secretName: "tls-leartech.info-p"

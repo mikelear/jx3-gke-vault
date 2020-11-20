@@ -17,13 +17,13 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.leartech.tech
+    - host: dashboard-jx.leartech.info
       http:
         paths:
           - backend:
               serviceName: jx-pipelines-visualizer
               servicePort: http
   tls:
-    - secretName: tls-leartech-tech-p
+    - secretName: tls-leartech.info-p
       hosts:
-        - dashboard-jx.leartech.tech
+        - dashboard-jx.leartech.info
