@@ -16,8 +16,8 @@ spec:
               serviceName: hook
               servicePort: 80
             path: "/"
-      host: hook-jx.leartech.info
+      host: hook-jx.leartech.tech
   tls:
     - hosts:
-        - hook-jx.leartech.info
-      secretName: "tls-leartech.info-p"
+        - hook-jx.leartech.tech
+      secretName: "tls-leartech-tech-p"

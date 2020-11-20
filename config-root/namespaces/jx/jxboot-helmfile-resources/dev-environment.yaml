@@ -77,7 +77,7 @@ spec:
         key: production
       gitops: true
       ingress:
-        domain: leartech.info
+        domain: leartech.tech
         externalDNS: false
         namespaceSubDomain: -jx.
         tls:

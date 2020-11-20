@@ -39,7 +39,7 @@ spec:
             # Generic arguments
             - --log-level=info
             - --log-format=text
-            - --domain-filter=leartech.info
+            - --domain-filter=leartech.tech
             - --policy=upsert-only
             - --provider=google
             - --registry=txt

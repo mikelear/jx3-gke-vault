@@ -1,7 +1,7 @@
 # Source: jxboot-helmfile-resources/templates/ingress-config-configmap.yaml
 apiVersion: v1
 data:
-  domain: "leartech.info"
+  domain: "leartech.tech"
   email: ""
   exposer: "Ingress"
   issuer: ""
